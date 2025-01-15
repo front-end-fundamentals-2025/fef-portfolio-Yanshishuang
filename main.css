@@ -16,8 +16,10 @@ header img{
 h1,header p{
     text-align: center;
 }
+h1{
+    font-family: sans-serif;
+}
 main{
-    border:solid 2px black;
     background-color: rgba(200,200,200,0.5);
     border-radius:20px 20px;
     width:80%;
@@ -27,10 +29,9 @@ main{
 }
 #information{
     margin-left:50px;
-    margin-top:50px;
+    margin-top:80px;
     margin-right:20px;
     width: 50%;
-    border:2px solid black;
     height:180px;
     max-width: 300px;
 }
@@ -39,15 +40,19 @@ main{
     justify-content: center;
 }
 #information p{
-    border:2px solid black;
     text-align: left;
 }
 .bold{
     font-weight: bold;
 }
 #about-me{
-    width:80%;
-    margin:0 auto;
-    padding:5px 20px;
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+    margin-bottom:30px;
     text-align: left;
+    padding-right:50px;
+    padding-left:50px;
+    border:none;
 }
