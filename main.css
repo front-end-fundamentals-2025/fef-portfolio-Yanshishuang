@@ -71,3 +71,10 @@ header p{
     font-size:2em;
     color:rgb(97, 71, 6);
 }
+footer{
+    display: block;
+    margin:20px auto;
+}
+a{
+    margin:20px auto;
+}
