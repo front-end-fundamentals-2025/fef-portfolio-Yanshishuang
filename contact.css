@@ -1,4 +1,5 @@
 body{
-    background-image: url(hello.jpg);
+    background-image: url(contact.jpg);
     width:100%;
+    background-size: cover;
 }
