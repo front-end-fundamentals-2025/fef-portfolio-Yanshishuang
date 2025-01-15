@@ -35,6 +35,7 @@ main{
 .flex{
     display:flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 #information p{
     text-align: left;
