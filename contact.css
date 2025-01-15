@@ -4,23 +4,34 @@ body{
     background-size:cover;
 }
 #intrudaction{
-    width:50%;
-    border:2px solid black;
-    color:white;
+    width:40%;
+    color:#003366;
+    padding:20px 30px;
+    margin:245px auto;
+    background-color: rgba(200,200,200,0.5);
+    border-radius: 10px 10px;
+    min-width: 400px;
 }
 #leave-questions{
-    width:50%;
+    width:20%;
+    min-width:300px;
+    height: 300px;
     display:flex;
     flex-direction: column;
     align-items: center;
     background-color: rgba(200,200,200,0.8);
     border-radius:20px 20px;
-    font-size:1.5em;
+    font-size:1.3em;
     color:white;
+    padding-top:40px;
+    padding-left:15px;
+    padding-right:15px;
+    margin:200px auto;
 }
 main{
     display:flex;
-    margin:200px auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 button{
     display:block;
@@ -35,4 +46,19 @@ input,textarea{
     border-radius: 10px 10px;
     border:none;
     margin-top:10px;
+}
+h2{
+    font-size:2em;
+    margin-bottom: 30px;
+}
+h3{
+    font-size: 1em;
+}
+header{
+    text-align: center;
+    font-family: Georgia;
+    font-size: 1.8em;
+    letter-spacing: -1px;
+    margin-top: 80px;
+    color:#003366
 }
