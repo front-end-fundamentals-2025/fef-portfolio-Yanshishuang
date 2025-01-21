@@ -1,4 +1,6 @@
-
+*{
+    box-sizing: border-box;
+}
 body{
     background-image: url(jpg/sea.jpg);
     background-size:cover;
@@ -7,7 +9,7 @@ body{
     width:40%;
     color:#003366;
     padding:20px 30px;
-    margin:245px auto;
+    margin:auto auto;
     background-color: rgba(200,200,200,0.5);
     border-radius: 10px 10px;
     min-width: 300px;
