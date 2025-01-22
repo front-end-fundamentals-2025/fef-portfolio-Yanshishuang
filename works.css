@@ -41,3 +41,26 @@ li a{
 li a:active{
     color:blueviolet;
 }
+header{
+    display:block;
+    width:100%;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:90px;
+    font-size: 2rem;
+}
+#works{
+    display:grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: repeat(3,100px);
+    gap:10px;
+    margin:20px auto;
+}
+div{
+    background-color: blue;
+}
+main{
+    margin:auto;
+    border:2px solid black;
+}
