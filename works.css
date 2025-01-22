@@ -83,7 +83,7 @@ header{
 @media screen and (max-width:767px) and (min-width:540px) {
     #works{
         display:grid;
-        grid-template-columns: repeat(2,200px);
+        grid-template-columns: repeat(2,300px);
         grid-template-rows: repeat(3,200px);
         gap:30px;
         padding:10%;
@@ -93,7 +93,7 @@ header{
 @media screen and (max-width:539px) {
     #works{
         display:grid;
-        grid-template-columns: 200px;
+        grid-template-columns: 300px;
         grid-template-rows: repeat(6,200px);
         gap:50px;
         padding:20%;
@@ -101,13 +101,12 @@ header{
 }
 }
 div{
-    background-color: blue;
+    background-color: burlywood;
     height:200px;
     width:200px;
 }
 main{
     margin:200px auto;
-    border:2px solid black;
     max-width: 905px;
     
 }
