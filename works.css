@@ -104,9 +104,28 @@ div{
     height:300px;
     width:300px;
     border-radius: 20%;;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 6px 6px rgba(179, 147, 105, 0.8);
 }
 main{
     margin:200px auto;
     max-width: 905px;
-    
+}
+img{
+    width: 100%;
+    height: 80%;
+    align-items: cenet;
+    object-fit:cover;
+    border-top-right-radius: 21%;
+    border-top-left-radius: 21%;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+p{
+    text-align: center;
+    font-style: italic;
+    font-size: large;
+    font-weight: bolder;
 }
