@@ -86,7 +86,7 @@ header{
         grid-template-columns: repeat(2,200px);
         grid-template-rows: repeat(3,200px);
         gap:30px;
-        padding:20%;
+        padding:10%;
         justify-content: center;
 }
 }
@@ -102,6 +102,8 @@ header{
 }
 div{
     background-color: blue;
+    height:200px;
+    width:200px;
 }
 main{
     margin:200px auto;
