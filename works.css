@@ -1,6 +1,10 @@
 *{
     box-sizing: border-box;
 }
+body{
+    background-image: url(jpg/works-background.jpg);
+    background-size: cover;
+}
 nav ul{
     display:flex;
     list-style: none;
