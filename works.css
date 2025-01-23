@@ -3,7 +3,7 @@
 }
 body{
     background-image: url(jpg/background-work.jpg);
-    background-size: cover;
+    background-size: contain;
 }
 nav ul{
     display:flex;
@@ -22,7 +22,7 @@ li{
     padding:10px 20px;
     border-radius: 10%;
     font-style: italic;
-    color:aquamarine
+    color:aquamarine;
 }
 nav{
     position: fixed;
@@ -66,7 +66,10 @@ header{
     margin-left:auto;
     margin-right:auto;
     margin-top:200px;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-family: "Jersey 15", serif;
+    color:rgba(0,0,0,0.8);
+    font-weight: 400;
 }
 @media screen and (min-width:1024px) {
     #works{
@@ -108,6 +111,7 @@ div{
     padding-left: 10px;
     padding-right: 10px;
     box-shadow: 6px 6px rgba(179, 147, 105, 0.8);
+    
 }
 main{
     margin:200px auto;
@@ -126,6 +130,7 @@ img{
 p{
     text-align: center;
     font-style: italic;
-    font-size: large;
-    font-weight: bolder;
+    font-size: 1.2rem;
+    font-family: "Jersey 15", serif;
+
 }
