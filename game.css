@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+main{
+    height: 600px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas: 
+    "game game background"
+    "game game background"
+    " detail detail background ";
+    gap:20px;
+    margin:100px auto;
+    max-width: 750px;
+}
+.game{
+    background-color: black;
+    grid-area: game;
+}
+.game-background{
+    background-color: blue;
+    grid-area: background;
+}
+.game-detail{
+    background-color: brown;
+    grid-area: detail;
+}
