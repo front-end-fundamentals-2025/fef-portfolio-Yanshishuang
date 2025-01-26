@@ -35,10 +35,12 @@ main{
         "bottom bottom"
         "bottom bottom";
         height:auto;
-        border:2px solid black;
     }
     .side p{
         font-size: 1rem;
+    }
+    footer{
+        padding-top:100px;
     }
 }
 @media screen and (max-width:480px){
@@ -56,6 +58,7 @@ main{
     border-radius: 20px 20px;
     background-color: rgba(255,255,255,0.7);
     grid-area: side;
+    min-width: 208px;
 }
 .bottom{
     border-radius: 20px 20px;
@@ -135,6 +138,7 @@ header{
     margin-right: auto;
     border-radius: 10%;
     height: auto;
+    max-height: 60%;
 
 }
 .text{

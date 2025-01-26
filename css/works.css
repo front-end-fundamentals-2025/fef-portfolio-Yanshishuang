@@ -51,13 +51,13 @@ li:hover{
     background-color: aquamarine;
     color:burlywood;
 }
-li a:hover{
+a:hover{
     color:burlywood;
 }
-li a{
+a{
     color:aquamarine;
 }
-li a:active{
+a:active{
     color:blueviolet;
 }
 header{
@@ -139,4 +139,13 @@ a{
 }
 main a{
     color:black;
+}
+footer{
+    color:white;
+    text-align: center;
+    background-color: rgba(200,200,200,0.5);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px 20px;
+    margin-bottom: 0px;
 }
