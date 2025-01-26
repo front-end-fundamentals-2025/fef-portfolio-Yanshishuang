@@ -126,7 +126,7 @@ a{
 a:active{
     color:blueviolet;
 }
-@media screen and (max-width:440px) {
+@media screen and (max-width:560px) {
     nav ul{
         flex-direction: column;
         padding-right:3px;
@@ -138,6 +138,18 @@ a:active{
         max-width:100px;
         margin-left:auto;
         margin-right:0;
+    }
+    main{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #information{
+        min-width:215px;
+    }
+    #about-me{
+        border-radius: 0;
+        width:100%;
     }
 }
 #about-me p{
