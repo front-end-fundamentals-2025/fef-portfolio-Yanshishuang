@@ -1,28 +1,161 @@
 *{
     box-sizing: border-box;
 }
+body{
+    background-image: url(../jpg/game1-background.jpg);
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    flex-direction: column;
+}
 main{
-    height: 600px;
+    height: 100vh;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "game game background"
-    "game game background"
-    " detail detail background ";
+    "game game side"
+    "game game side"
+    " bottom bottom side"
+    "bottom bottom side";
     gap:20px;
-    margin:100px auto;
+    margin: auto;
     max-width: 750px;
+    padding:10px;
+}
+@media screen and (max-width:610px) {
+    main{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(7,20%);
+        grid-template-areas: 
+        "game game"
+        "game game"
+        "side side"
+        "bottom bottom"
+        "bottom bottom";
+        height:auto;
+        border:2px solid black;
+    }
+    .side p{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:480px){
+    .side p{
+        font-size:0.8rem;
+        overflow: hidden;
+    }
 }
 .game{
-    background-color: black;
+    border-radius: 20px 20px;
+    background-color: rgba(255,255,255,0.7);
     grid-area: game;
 }
-.game-background{
-    background-color: blue;
-    grid-area: background;
+.side{
+    border-radius: 20px 20px;
+    background-color: rgba(255,255,255,0.7);
+    grid-area: side;
 }
-.game-detail{
-    background-color: brown;
-    grid-area: detail;
+.bottom{
+    border-radius: 20px 20px;
+    background-color: rgba(255,255,255,0.7);
+    grid-area: bottom;
+}
+nav ul{
+    display:flex;
+    list-style: none;
+    padding:20px;
+    font-size:20px;
+    font-weight: bolder;
+    justify-content: flex-end;
+    background-color: rgba(200,200,200,0.2);
+    width:100%;
+    margin: 0;
+}
+li{
+    margin-left: 3%;
+    background-color: burlywood;
+    padding:10px 20px;
+    border-radius: 10%;
+    font-style: italic;
+    color:aquamarine
+}
+nav{
+    position: fixed;
+    top:0;
+    width:100%;
+    left:0;
+    z-index: 100;
+    height: 80px;
+}
+li:hover,.play-button:hover{
+    background-color: aquamarine;
+    color:burlywood;
+}
+a:hover{
+    color:burlywood;
+}
+a{
+    color:aquamarine;
+    text-decoration: none;
+}
+a:active{
+    color:blueviolet;
+}
+@media screen and (max-width:440px) {
+    nav ul{
+        flex-direction: column;
+        padding-right:3px;
+        padding-top:30px;
+    }
+    ul li{
+        min-width: 90px;
+        margin-bottom:10px;
+        max-width:100px;
+        margin-left:auto;
+        margin-right:0;
+    }
+}
+header{
+    text-align: center;
+    margin-top: 100px;
+    font-family: "Jersey 15", serif;
+    font-size: 2rem;
+}
+.game,.bottom,.side{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.game-pic{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+    height: auto;
+
+}
+.text{
+    text-align: center;
+    font-family: "Jersey 15", serif ;
+    font-size: 1.2rem;
+    margin:20px
+}
+.play-button{
+    width:80px;
+    text-align: center ;
+    background-color: burlywood;
+    color:aquamarine;
+    height:30px;
+    padding:5px;
+    border-radius: 10%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 20px;
+}
+footer{
+    color:white;
+    text-align: center;
 }
