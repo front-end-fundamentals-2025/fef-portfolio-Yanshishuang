@@ -2,8 +2,10 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(jpg/background.jpg);
+    background-image: url(../jpg/sweden.jpg);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 #picture img{
     height: 200px;
@@ -18,7 +20,8 @@ h1,header p{
     text-align: center;
 }
 h1{
-    font-family: sans-serif;
+    font-family: "Jersey 15", serif;
+    font-size: 3rem;
 }
 main{
     background-color: rgba(200,200,200,0.5);
@@ -48,7 +51,8 @@ main{
 #information p{
     text-align: left;
     color:white;
-
+    display:flex;
+    justify-content: space-between;
 }
 .bold{
     font-weight: bold;
@@ -79,6 +83,7 @@ h1{
 header p{
     font-size:2em;
     color:burlywood;
+    font-family: "Jersey 15", serif;
 }
 nav ul{
     display:flex;
@@ -116,6 +121,7 @@ li a:hover{
 }
 li a{
     color:aquamarine;
+    text-decoration: none;
 }
 li a:active{
     color:blueviolet;
@@ -133,4 +139,10 @@ li a:active{
         margin-left:auto;
         margin-right:0;
     }
+}
+#about-me p{
+    min-width: 200px;
+}
+header{
+    margin-top:100px;
 }

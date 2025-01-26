@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(jpg/sea.jpg);
+    background-image: url(../jpg/sea.jpg);
     background-size:cover;
 }
 #intrudaction{
@@ -59,11 +59,11 @@ h3{
 }
 header{
     text-align: center;
-    font-family: Georgia;
-    font-size: 1.8em;
+    font-family: "Jersey 15", serif;
+    font-size: 2.5em;
     letter-spacing: -1px;
     margin-top: 80px;
-    color:#003366
+    color:rgba(0,0,0,0.9);
 }
 nav ul{
     display:flex;
@@ -101,6 +101,7 @@ li a:hover{
 }
 li a{
     color:aquamarine;
+    text-decoration: none;
 }
 li a:active{
     color:blueviolet;
