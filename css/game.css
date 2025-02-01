@@ -59,6 +59,7 @@ main{
     background-color: rgba(255,255,255,0.7);
     grid-area: side;
     min-width: 208px;
+    text-align: justify;
 }
 .bottom{
     border-radius: 20px 20px;
@@ -162,4 +163,17 @@ header{
 footer{
     color:white;
     text-align: center;
+}
+li:hover,.play-button:hover{
+    animation-name:select;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+@keyframes select {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
 }

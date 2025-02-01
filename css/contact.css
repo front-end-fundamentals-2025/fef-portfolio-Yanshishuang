@@ -126,3 +126,16 @@ footer{
     margin-bottom: 50px;
     margin-top:0px;
 }
+li:hover{
+    animation-name:select;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+@keyframes select {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
