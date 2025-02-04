@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    margin:0;
+    padding:0;
 }
 body{
     background-image: url(../jpg/sweden.jpg);
@@ -53,6 +55,7 @@ main{
     color:white;
     display:flex;
     justify-content: space-between;
+    padding-top: 15px;
 }
 .bold{
     font-weight: bold;
@@ -167,6 +170,7 @@ li:hover{
     animation-name:select;
     animation-duration: 0.3s;
     animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
 }
 @keyframes select {
     from{
@@ -174,5 +178,41 @@ li:hover{
     }
     to{
         transform: scale(1.2);
+    }
+}
+.scroll-bar{
+    position: relative; 
+    margin: 0px;
+    width:100%;
+    text-align: left;
+    overflow: hidden;
+    padding:0px;
+}
+.scroll-bar hr{
+    height:30px;
+    background-color: rgba(200,200,200,0.8);
+    width:100%;
+    margin:0px;
+    padding:0px;
+    border:none;
+}
+.text-hr{
+    position: absolute;
+    top:2px;
+    animation-name:scroll ;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    white-space: nowrap;
+    animation-timing-function: linear;
+    font-size: 18px;
+    width:auto;
+    color:whitesmoke;
+}
+@keyframes scroll {
+    from{
+        transform: translateX(70%);
+    }
+    to{
+        transform: translateX(-70%);
     }
 }
