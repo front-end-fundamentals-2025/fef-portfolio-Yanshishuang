@@ -5,19 +5,50 @@ body{
     background-image: url(../jpg/sea.jpg);
     background-size:cover;
 }
+.jersey-15-regular {
+    font-family: "Jersey 15", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  #title{
+    font-family: "Black Ops One", serif;
+    color:white;
+    text-align: left;
+    font-size:4rem;
+    margin-left:20px;
+    width: 50%;
+    height: 300px;
+  }
+  #title h1{
+    margin-bottom: 0px;
+    word-wrap: break-word;
+  }
+  #title p {
+    font-size: 1.3rem;
+    margin-top: -30px;
+    margin-left: 10px;
+    font-family: serif;
+    letter-spacing: 0.5px;
+  }
+  .flex{
+    display: flex;
+    align-items: center;
+  }
 #intrudaction{
-    width:40%;
-    color:#003366;
+    width:55%;
+    color:white;
     padding:20px 30px;
-    margin:auto auto;
     background-color: rgba(200,200,200,0.5);
     border-radius: 10px 10px;
-    min-width: 300px;
+    min-width: 350px;
     align-items: center;
+    margin:0 auto;
+    text-align:center;
+    max-width:400px;
 }
 #leave-questions{
-    width:20%;
-    min-width:300px;
+    width:80%;
+    min-width:350px;
     height: 300px;
     display:flex;
     flex-direction: column;
@@ -29,12 +60,17 @@ body{
     padding-top:40px;
     padding-left:15px;
     padding-right:15px;
-    margin:200px auto;
+    margin:0 auto;
+    max-width: 500px;
 }
 main{
     display:flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height:600px;
+    width: 40%;
+    margin-top:9%;
 }
 button{
     display:block;
@@ -49,6 +85,9 @@ input,textarea{
     border-radius: 10px 10px;
     border:none;
     margin-top:10px;
+}
+input{
+    width:180px;
 }
 h2{
     font-size:2em;
@@ -72,7 +111,7 @@ nav ul{
     font-size:20px;
     font-weight: bolder;
     justify-content: flex-end;
-    background-color: rgba(200,200,200,0.2);
+    background-color: rgba(200,200,200,0);
     width:100%;
     margin: 0;
 }
@@ -82,7 +121,7 @@ li{
     padding:10px 20px;
     border-radius: 10%;
     font-style: italic;
-    color:aquamarine
+    color:white;
 }
 nav{
     position: fixed;
@@ -100,7 +139,7 @@ a:hover{
     color:burlywood;
 }
 a{
-    color:aquamarine;
+    color:white;
     text-decoration: none;
 }
 a:active{
@@ -137,5 +176,31 @@ li:hover{
     }
     to{
         transform: scale(1.2);
+    }
+}
+@media screen and (max-width:1300px){
+    .flex{
+        flex-direction: column;
+    }
+    main{
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom:30px;
+        margin-top:10px;
+        width:100%;
+    }
+    #title{
+        margin:10px auto;
+        text-align: center;
+        width:100%;
+    }
+}
+@media screen and (max-width:680px) {
+    h1{
+        font-size: 3rem;
+        margin-top:100px;
+    }
+    #title p{
+        margin-top:10px;
     }
 }
